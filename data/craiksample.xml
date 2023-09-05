@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Craik Sample</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+        <listPerson>
+           <person xml:id="HallAnnaMaria" sex="2">
+              <persName>
+                 <surname type="married">Hall</surname>
+                 <surname type="maiden">Fielding</surname>
+                 <forename>Anna</forename>
+                 <forename>Maria</forename>
+              </persName>
+              <birth when="1800"/>
+              <death when="1881"/>
+              <occupation>Writer</occupation>
+              <nationality>Irish</nationality>
+              <affiliation from="1852" to="1853" role="editor"><title>Sharpe's London
+                 Magazine</title></affiliation>
+              <affiliation from="1861" to="1868" role="editor"><title>St James's
+                 Magazine</title></affiliation>
+              <residence>The Rosery, Old Brompton</residence>
+              <event type="marriage" when="1824">
+                 <label>Marriage</label>
+                 <desc><persName ref="#AnnaMariaHall">Anna Maria Fielding</persName> married
+                    <persName ref="#SamuelCarterHall">Samuel Carter Hall</persName>.</desc>
+              </event>
+              <note type="bio" resp="#FukushimaKailey">Anna Maria Hall was an Irish-born writer
+                 and editor. She lived in England with her husband <persName
+                    ref="#HallSamuelCarter">Samuel Carter Hall.</persName></note>
+           </person>
+        </listPerson>
+      </body>
+  </text>
+</TEI>
